@@ -1,0 +1,5 @@
+<FanAnims>
+    <SpriteSheet name="Fan"    texturePath="Data/Images/Fan_3x2.png" gridLayout="3,2"/>
+    <SpriteAnim  name="FanOn"  spriteSheet="Fan" startCoords="0,0" endCoords="2,1" duration="1.f" playbackType="Loop"/>
+    <SpriteAnim  name="FanOff" spriteSheet="Fan" startCoords="0,0" endCoords="0,0" duration="1.f" playbackType="Once"/>
+</FanAnims>
