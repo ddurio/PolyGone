@@ -1,6 +1,7 @@
-<ProjectConfig
-    name="Protogame2D"
-    fullscreen="false"
-    resolution="1920,1080"
-    defaultFont="SquirrelFixedFont"
-/>
+<ProjectConfig name="Poly-Gone! (ddurio)" version="2">
+    <bgmVolume value="0.40f"/>
+    <defaultFont value="SquirrelFixedFont"/>
+    <masterVolume value="1.00f"/>
+    <sfxVolume value="0.50f"/>
+    <showMainMenu value="true"/>
+</ProjectConfig>

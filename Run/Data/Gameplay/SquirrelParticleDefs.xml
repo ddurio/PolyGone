@@ -1,0 +1,32 @@
+<Particles>
+    <SpriteSheet name="SquirrelParticles" texturePath="Data/Images/SquirrelSprites2_32x32.png" gridLayout="32,32"/>
+    <Particle name="ObstacleHit" lifespan="0.2~1">
+        <RenderOption spriteCoords="8,16" colorEnd="Clear"/>
+        <Movement coneWidthDegrees="90" speed="5~10"/>
+        <Rotation direction="both" speed="200~360"/>
+    </Particle>
+    <Particle name="ObstacleDestroyed_Ring" lifespan="1.5">
+        <RenderOption spriteCoords="8,21" colorEnd="Clear" scaleBase="1.5" scaleEnd="8"/>
+    </Particle>
+    <Particle name="ObstacleDestroyed_Burst" lifespan="2~4">
+        <RenderOption spriteCoords="9,20" colorEnd="Clear"/>
+        <Movement speed="0~5" acceleration="0,-5"/>
+        <Rotation speed="200~400"/>
+    </Particle>
+    <Particle name="ObstacleDestroyed">
+        <ChildParticle name="ObstacleDestroyed_Ring"/>
+        <ChildParticle name="ObstacleDestroyed_Burst" count="50"/>
+    </Particle>
+    <Particle name="YellowBurst" lifespan="2.f">
+        <RenderOption spriteCoords="10,20" colorStart="Yellow" colorEnd="1,1,0,0"/>
+        <Movement coneWidthDegrees="40" speed="15~20" acceleration="0,-10"/>
+        <Rotation direction="both" speed="360"/>
+    </Particle>
+    <Particle name="Victory" lifespan="3.f">
+        <RenderOption spriteCoords="5,25" colorStart="Yellow" colorEnd="Yellow"/>
+        <RenderOption spriteCoords="8,22" colorEnd="Clear" spawnChance="0.1"/>
+        <RenderOption spriteCoords="4,22" colorEnd="Clear" spawnChance="0.4"/>
+        <Movement coneWidthDegrees="40" speed="15~20" acceleration="0,-10"/>
+        <Rotation direction="right" speed="360"/>
+    </Particle>
+</Particles>
