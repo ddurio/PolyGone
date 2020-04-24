@@ -1,8 +1,10 @@
 <ProjectConfig name="Poly-Gone! (ddurio)" version="2">
     <appFlags value="seed_rng"/>
+    <autoSave value="true"/>
     <bgmVolume value="0.40f"/>
     <defaultFont value="SquirrelFixedFont"/>
     <masterVolume value="1.00f"/>
     <sfxVolume value="0.50f"/>
     <showMainMenu value="true"/>
+    <showTutorials value="true"/>
 </ProjectConfig>

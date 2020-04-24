@@ -9,7 +9,7 @@
         <RenderOption spriteCoords="8,21" colorEnd="Clear" scaleBase="1.5" scaleEnd="8"/>
     </Particle>
     <Particle name="ObstacleDestroyed_Burst" lifespan="2~4">
-        <RenderOption spriteCoords="9,20" colorEnd="Clear"/>
+        <RenderOption spriteCoords="9,20" colorEnd=""/>
         <Movement speed="0~5" acceleration="0,-5"/>
         <Rotation speed="200~400"/>
     </Particle>
@@ -17,16 +17,31 @@
         <ChildParticle name="ObstacleDestroyed_Ring"/>
         <ChildParticle name="ObstacleDestroyed_Burst" count="50"/>
     </Particle>
-    <Particle name="YellowBurst" lifespan="2.f">
-        <RenderOption spriteCoords="10,20" colorStart="Yellow" colorEnd="1,1,0,0"/>
+    <Particle name="BallPower" lifespan="0.1~0.3">
+        <RenderOption spriteCoords="6,30" scaleBase=".5~.75" tint="ORGANIC_PURPLE" alphaEnd="0.f"/>
+        <RenderOption spriteCoords="6,30" scaleBase=".5~.75" tint="ORGANIC_GREEN" alphaEnd="0.f"/>
+        <RenderOption spriteCoords="6,30" scaleBase=".5~.75" tint="ORGANIC_YELLOW" alphaEnd="0.f"/>
+        <Movement coneWidthDegrees="0" speed="5~10"/>
+        <Rotation speed="360"/>
+    </Particle>
+    <Particle name="FreezePower" lifespan="2~4">
+        <RenderOption spriteCoords="6,22" alphaEnd="0" scaleBase=".5~1.5"/>
+        <Movement condWidthDegrees="0" speed="0" acceleration="0,-10"/>
+        <Rotation speed="40~60"/>
+    </Particle>
+    <Particle name="Victory_Burst" lifespan="1~3">
+        <RenderOption spriteCoords="4,26" tint="200,150,30,255"  alphaEnd="0" scaleBase="1~3"/>
+        <RenderOption spriteCoords="4,26" tint="ORGANIC_ORANGE" alphaEnd="0" scaleBase="1~3" spawnChance="0.2"/>
         <Movement coneWidthDegrees="40" speed="15~20" acceleration="0,-10"/>
         <Rotation direction="both" speed="360"/>
     </Particle>
-    <Particle name="Victory" lifespan="3.f">
-        <RenderOption spriteCoords="5,25" colorStart="Yellow" colorEnd="Yellow"/>
+    <Particle name="Victory_Stream" lifespan="2~4">
+        <RenderOption spriteCoords="6,30" scaleBase=".75~1.5" tint="ORGANIC_PURPLE" alphaEnd="0.f"/>
+        <RenderOption spriteCoords="6,30" scaleBase=".75~1.5" tint="ORGANIC_GREEN" alphaEnd="0.f"/>
+        <RenderOption spriteCoords="6,30" scaleBase=".75~1.5" tint="ORGANIC_YELLOW" alphaEnd="0.f"/>
         <RenderOption spriteCoords="8,22" colorEnd="Clear" spawnChance="0.1"/>
-        <RenderOption spriteCoords="4,22" colorEnd="Clear" spawnChance="0.4"/>
-        <Movement coneWidthDegrees="40" speed="15~20" acceleration="0,-10"/>
+        <RenderOption spriteCoords="4,22" colorEnd="Clear" spawnChance="0.2"/>
+        <Movement coneWidthDegrees="45" speed="15~20" acceleration="0,-10"/>
         <Rotation direction="right" speed="360"/>
     </Particle>
 </Particles>
