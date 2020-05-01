@@ -3,7 +3,7 @@
     <autoSave value="true"/>
     <bgmVolume value="0.40f"/>
     <defaultFont value="SquirrelFixedFont"/>
-    <masterVolume value="1.00f"/>
+    <masterVolume value="0.50f"/>
     <sfxVolume value="0.50f"/>
     <showMainMenu value="true"/>
     <showTutorials value="true"/>
